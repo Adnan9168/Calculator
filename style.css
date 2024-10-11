@@ -1,0 +1,48 @@
+body{
+height: 100vh;
+margin: 0;
+padding: 0;
+background-color: beige;
+
+}
+
+#head1
+{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.mainDiv
+{
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    display:inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: auto;
+    width: 50%;
+    border: 1px solid black;
+    
+}
+
+
+#res
+{
+    grid-column-start: 1;
+    grid-column-end:4;
+    overflow: hidden; 
+    border: 2px solid black;
+    text-overflow: ellipsis;
+}
+
+.grid-item
+{
+    
+    padding:10px;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color:green;
+    margin: 2px;
+    border-radius: 5px;
+}
